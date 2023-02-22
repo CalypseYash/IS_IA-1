@@ -1,0 +1,124 @@
+PACKET ANALYSIS PREPARATION REPORT
+
+Summary
+-------
+
+Filename:     demo.pcapng
+No of frames: 3555
+Start time:   Feb 23, 2023 00:26:17.068073000 India Standard Time
+End time:     Feb 23, 2023 00:26:38.737116000 India Standard Time
+Duration:     21.669043 s
+
+Capture Quality
+---------------
+
+Packets missed:       0
+Duplicate packets:    0
+Duplicates max delta: 0.0
+
+Duplicate packet counts are based on TCP only, and so the actual
+number of duplicate packets may be higher than shown here.
+
+Service Endpoints
+-----------------
+
+| Proto    | IP Addr            | Port     |
++----------+--------------------+----------+
+| TCP      | 104.120.74.19      | 443      |
+| TCP      | 118.214.135.33     | 443      |
+| TCP      | 140.82.113.22      | 443      |
+| TCP      | 172.217.160.163    | 443      |
+| TCP      | 185.199.108.154    | 443      |
+| TCP      | 185.199.109.133    | 443      |
+| TCP      | 20.207.73.82       | 443      |
+| TCP      | 20.207.73.85       | 443      |
+| TCP      | 31.13.79.53        | 443      |
+| TCP      | 52.111.252.7       | 443      |
+| UDP      | 142.250.192.10     | 443      |
+| UDP      | 142.250.67.142     | 443      |
+| UDP      | 142.250.67.196     | 443      |
+| UDP      | 142.250.82.17      | 3478     |
+| UDP      | 192.168.0.197      | 50064    |
+| UDP      | 192.168.0.255      | 20002    |
+| UDP      | 224.0.0.251        | 5353     |
+| UDP      | 239.255.255.250    | 1900     |
+| UDP      | 8.8.8.8            | 443      |
+| UDP      | ff02::fb           | 5353     |
+* No service endpoints identified
+
+Route Stability
+---------------
+
+This table shows the level of variation in TTL value along a route.
+A value of zero means no change was detected.  The higher the std
+value, the greater the level of variance.
+
+                             min  max       std
+ip.src        ip.dst
+142.250.82.17 192.168.0.197   53  125  8.521545
+
+NB: The Route Stability assessment is only valid for the portion of the
+route from the source IP to the point where the packets were captured.
+
+
+Packet Loss
+-----------
+
+Excessive TCP Retransmissions
+
+Typically, we are interested in TCP retransmissions and Dup ACKs for each
+TCP connection, but here we are using this information as an indication of
+packet loss.  For that reason, we aggregate these numbers for all TCP traffic
+between IP address pairs.
+
+* No TCP retransmissions seen
+
+Excessive DUP ACKs
+             ip.src           ip.dst  # of Dup ACKs
+0     104.120.74.19    192.168.0.197             14
+1    118.214.135.33    192.168.0.197             24
+2     140.82.113.22    192.168.0.197              2
+3   172.217.160.163    192.168.0.197              1
+4   185.199.108.154    192.168.0.197              2
+5   185.199.109.133    192.168.0.197              1
+6     192.168.0.197    104.120.74.19             13
+7     192.168.0.197   118.214.135.33             19
+8     192.168.0.197    140.82.113.22              2
+9     192.168.0.197  172.217.160.163              1
+10    192.168.0.197  185.199.108.154              2
+11    192.168.0.197  185.199.109.133              1
+12    192.168.0.197     20.207.73.82              1
+13    192.168.0.197     20.207.73.85              1
+14    192.168.0.197      31.13.79.53              3
+15    192.168.0.197     52.111.252.7              1
+16     20.207.73.82    192.168.0.197              1
+17     20.207.73.85    192.168.0.197              1
+18      31.13.79.53    192.168.0.197              3
+19     52.111.252.7    192.168.0.197              1
+
+
+DNS
+---
+
+DNS Servers Seen
+
+* No DNS servers seen
+
+DNS Servers Not Responding
+
+
+DNS Service Errors
+
+* To be completed
+
+
+DNS Request Latency
+
+* No DNS servers seen
+
+Service Performance
+-------------------
+
+Empty DataFrame
+Columns: []
+Index: []
